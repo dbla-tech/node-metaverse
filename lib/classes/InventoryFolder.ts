@@ -55,7 +55,7 @@ export class InventoryFolder
         this.agent = agent;
         this.library = lib;
         this.inventoryBase = invBase;
-        const cacheLocation = path.resolve(__dirname + '/cache');
+        const cacheLocation = path.resolve('/tmp' + '/cache');
         if (!fsSync.existsSync(cacheLocation))
         {
             fsSync.mkdirSync(cacheLocation, 0o777);

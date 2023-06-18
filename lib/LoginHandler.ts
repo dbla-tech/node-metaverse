@@ -58,7 +58,7 @@ export class LoginHandler
 
         let hardwareID: string | null = null;
 
-        const hardwareIDFile = path.resolve(__dirname, 'deviceToken.json');
+        const hardwareIDFile = path.resolve('/tmp/', 'deviceToken.json');
         try
         {
             const hwID = await fs.promises.readFile(hardwareIDFile);
